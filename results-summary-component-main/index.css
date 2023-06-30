@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.head {
+  background-color: hsl(241, 81%, 54%);
+  color: hsla(0, 0%, 100%);
+  text-align: center;
+  padding: 40px;
+  border-radius: 0 0 35px 35px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(180deg, hsl(241, 72%, 37%), hsl(241, 81%, 54%, .83));
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.per {
+  background-color: hsla(241, 72%, 46%, 0);
+
+}
+
+.head h3,
+h5 {
+  color: hsl(241, 100%, 89%);
+}
+
+p {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+
+.body {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+
+}
+
+.body h3 {
+  color: hsl(224, 30%, 27%);
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  gap: 1rem;
+  margin: 20px 0;
+}
+
+img {
+  margin-right: 0.625rem;
+}
+
+span {
+  color: black;
+}
+
+.reaction {
+  background-color: hsla(0, 37%, 88%, .2);
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.reaction h4 {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, .08);
+}
+
+.memory h4 {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, .05);
+}
+
+.verbal h4 {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, .06);
+}
+
+.visual h4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.react,
+.mem,
+.vis,
+.verb {
+  display: flex;
+}
+
+.btn {
+  padding: 15px 120px;
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (min-width: 760px) {
+  body {
+    padding: 40px;
+
+  }
+
+  .performance {
+    display: flex;
+
+  }
+
+  .head {
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+  }
+
+  .body {
+    border-radius: 0 0 40px 0;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .performance {
+    display: flex;
+    gap: 0.625rem;
+
+  }
+
+  .performance.head h1 {
+    gap: 2rem;
+  }
+}
+
+
+
+
+.head h1 {
+  gap: 2rem;
+}
+
+.body {
+  gap: 20px;
+}
